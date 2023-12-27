@@ -4,12 +4,8 @@ permissions:
   contents: write
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
+  workflow_dispatch:
 
-env:
-  VITE_PLAUSIBLE_API_HOST: ${{ vars.VITE_PLAUSIBLE_API_HOST }}
 
 jobs:
   build:
